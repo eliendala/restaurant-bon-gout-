@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Bon-Goût Kolwezi | Poulet, Poisson, Burger, Pizza</title>
+  <meta name="description" content="Menu Bon-Goût : poulet braisé 20 000 CDF, poisson grillé, burger, pizza, jus naturel. Ajoutez au panier et commandez sur WhatsApp.">
+  <meta property="og:title" content="Menu — Bon-Goût">
+  <meta property="og:description" content="Poulet braisé, burger, pizza, jus — Commandez sur WhatsApp en 10s.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">Bon-Goût<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="menu-disponible.html" class="actif" aria-current="page">Menu</a>
+      <a href="centre-aide.html">Aide</a>
+      <a href="https://wa.me/243861277878" target="_blank" class="bouton" style="padding:8px 16px;font-size:.85rem">Commander</a>
+    </div>
+  </nav>
+
+  <header class="hero" style="min-height:50vh">
+    <div class="hero-inner">
+      <p class="eyebrow">Restaurant Bon-Goût — Kolwezi</p>
+      <h1 class="titre" style="font-size:clamp(2rem,6vw,3rem)">Notre menu</h1>
+      <p class="text">Frais du jour, prix Kolwezi. Ajoutez au panier, commandez sur WhatsApp en 10 secondes.</p>
+    </div>
+  </header>
+
+  <main class="menu-page">
+    <section>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <h2 class="sous-titre" style="margin:0">Nos plats</h2>
+        <span class="badge">5 plats • Livraison & retrait • 4 000 — 20 000 CDF</span>
+      </div>
+      <div id="menu-container" class="menu-grid"></div>
+    </section>
+
+    <section class="panier-section">
+      <h2 class="sous-titre">Votre commande</h2>
+      <div id="panier" class="panier">
+        <p id="panier-vide" class="panier-vide">Votre panier est vide. Ajoutez des plats ci-dessus.</p>
+        <div id="panier-contenu"></div>
+        <div class="panier-total"><span>Total</span><strong id="total">0 CDF</strong></div>
+        <p class="panier-note">Votre commande s'ouvre dans WhatsApp, prête à envoyer. Nous confirmons total et dispo avec vous. Pas de paiement en ligne.</p>
+        <button id="commander" class="bouton bouton-commande" type="button">🟢 Commander sur WhatsApp</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column"><h3>À propos</h3><p>Un restaurant moderne, pensé pour tous les goûts, au cœur de Kolwezi.</p></div>
+      <div class="footer-column"><h3>Navigation</h3><ul><li><a href="index.html">Accueil</a></li><li><a href="menu-disponible.html">Plats disponibles</a></li><li><a href="centre-aide.html">Besoin d'aide</a></li></ul></div>
+      <div class="footer-column"><h3>Contact</h3><p>Email : bongout@gmail.com</p><p>Tél : +243 980 607 070</p><p>WhatsApp : <a href="https://wa.me/243861277878" target="_blank">+243 861 277 878</a></p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Restaurant Bon-Goût. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="menu.js"></script>
+</body>
+</html>
